@@ -53,7 +53,7 @@ class TestOuterViewSet(TestCase):
                     "id": inner_obj.pk,
                     "file": {
                         "id": str(inner_file.pk),
-                        "file": f"/media_files/{inner_file.pk}.txt",
+                        "file": f"http://testserver/media_files/{inner_file.pk}.txt",
                         "owner": user.pk,
                         "created_at": IsStr(),
                     },
